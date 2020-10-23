@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Elemendid
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Table : ContentPage
+    public partial class C : ContentPage
     {
-        public Table()
+        public C()
         {
             InitializeComponent();
         }

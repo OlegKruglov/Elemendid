@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Elemendid
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DatePage : ContentPage
+    public partial class Swift : ContentPage
     {
-        public DatePage()
+        public Swift()
         {
             InitializeComponent();
         }
