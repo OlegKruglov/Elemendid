@@ -20,6 +20,8 @@ namespace Elemendid
             Button Swift_btn = new Button { Text = "Swift" };
             Button PHP_btn = new Button { Text = "PHP" };
             Button SQL_btn = new Button { Text = "SQL" };
+            Button TTS_btn = new Button { Text = "Text to Speech" };
+            Button Map_btn = new Button { Text = "Map" };
             StackLayout st = new StackLayout();
             st.Children.Add(Pyt_btn);
             st.Children.Add(JS_btn);
@@ -29,8 +31,22 @@ namespace Elemendid
             st.Children.Add(Swift_btn);
             st.Children.Add(PHP_btn);
             st.Children.Add(SQL_btn);
+            st.Children.Add(TTS_btn);
+            st.Children.Add(Map_btn);
             Content = st;
             Pyt_btn.Clicked += Pyt_btn_Clicked;
+            TTS_btn.Clicked += TTS_btn_Clicked;
+            Map_btn.Clicked += Map_btn_Clicked;
+        }
+
+        private async void Map_btn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Map());
+        }
+
+        private async void TTS_btn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TextToSpeech());
         }
 
         private async void Pyt_btn_Clicked(object sender, EventArgs e)
