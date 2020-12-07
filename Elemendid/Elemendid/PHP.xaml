@@ -4,9 +4,12 @@
              x:Class="Elemendid.PHP">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="PHP"
-                VerticalOptions="CenterAndExpand" 
+            <Label Text="Device Info"
+                VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="Info1" HorizontalOptions="Center"></Label>
+            <Label x:Name="Info2" HorizontalOptions="Center"></Label>
+            <Label x:Name="Info3" HorizontalOptions="Center"></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

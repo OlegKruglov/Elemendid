@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 
 namespace Elemendid
 {
@@ -15,6 +16,16 @@ namespace Elemendid
         public JavaScript()
         {
             InitializeComponent();
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Flashlight.TurnOnAsync();
+        }
+
+        private async void Button_Clicked_1(object sender, EventArgs e)
+        {
+            await Flashlight.TurnOffAsync();
         }
     }
 }

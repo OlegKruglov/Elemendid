@@ -4,9 +4,11 @@
              x:Class="Elemendid.Python">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Python"
-                VerticalOptions="CenterAndExpand" 
+            <Label Text="Vibrate"
+                VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="On" Clicked="Button_Clicked"></Button>
+            <Button Text="Off" Clicked="Button_Clicked_1"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

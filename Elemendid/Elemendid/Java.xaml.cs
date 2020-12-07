@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 
 namespace Elemendid
 {
@@ -15,6 +16,15 @@ namespace Elemendid
         public Java()
         {
             InitializeComponent();
+        }
+        public class BrowserTest
+    {
+}
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            Uri uri = new Uri("https://www.google.ru/");
+            await Browser.OpenAsync(uri, BrowserLaunchMode.SystemPreferred);
         }
     }
 }

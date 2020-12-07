@@ -12,13 +12,11 @@ namespace Elemendid
     {
         public MainPage()
         {
-            Button Pyt_btn = new Button { Text = "Python" };
-            Button JS_btn = new Button { Text = "JavaScript" };
-            Button J_btn = new Button { Text = "Java" };
-            Button CS_btn = new Button { Text = "C#" };
+            Button Pyt_btn = new Button { Text = "Vibrate" };
+            Button JS_btn = new Button { Text = "Flashlight" };
+            Button J_btn = new Button { Text = "Browser" };
             Button C_btn = new Button { Text = "C" };
-            Button Swift_btn = new Button { Text = "Swift" };
-            Button PHP_btn = new Button { Text = "PHP" };
+            Button PHP_btn = new Button { Text = "Device Info" };
             Button SQL_btn = new Button { Text = "SQL" };
             Button TTS_btn = new Button { Text = "Text to Speech" };
             Button Map_btn = new Button { Text = "Map" };
@@ -26,9 +24,7 @@ namespace Elemendid
             st.Children.Add(Pyt_btn);
             st.Children.Add(JS_btn);
             st.Children.Add(J_btn);
-            st.Children.Add(CS_btn);
             st.Children.Add(C_btn);
-            st.Children.Add(Swift_btn);
             st.Children.Add(PHP_btn);
             st.Children.Add(SQL_btn);
             st.Children.Add(TTS_btn);
@@ -37,6 +33,24 @@ namespace Elemendid
             Pyt_btn.Clicked += Pyt_btn_Clicked;
             TTS_btn.Clicked += TTS_btn_Clicked;
             Map_btn.Clicked += Map_btn_Clicked;
+            JS_btn.Clicked += JS_btn_Clicked;
+            J_btn.Clicked += J_btn_Clicked;
+            PHP_btn.Clicked += PHP_btn_Clicked;
+        }
+
+        private async void PHP_btn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PHP());
+        }
+
+        private async void J_btn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Java());
+        }
+
+        private async void JS_btn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new JavaScript());
         }
 
         private async void Map_btn_Clicked(object sender, EventArgs e)

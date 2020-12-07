@@ -4,9 +4,10 @@
              x:Class="Elemendid.Java">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Java"
-                VerticalOptions="CenterAndExpand" 
+            <Label Text="F"
+                VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="Browser" Clicked="Button_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
