@@ -15,9 +15,9 @@ namespace Elemendid
             Button Pyt_btn = new Button { Text = "Vibrate" };
             Button JS_btn = new Button { Text = "Flashlight" };
             Button J_btn = new Button { Text = "Browser" };
-            Button C_btn = new Button { Text = "C" };
+            Button C_btn = new Button { Text = "Phone Dialer" };
             Button PHP_btn = new Button { Text = "Device Info" };
-            Button SQL_btn = new Button { Text = "SQL" };
+            Button SQL_btn = new Button { Text = "Unit Converter" };
             Button TTS_btn = new Button { Text = "Text to Speech" };
             Button Map_btn = new Button { Text = "Map" };
             StackLayout st = new StackLayout();
@@ -36,6 +36,18 @@ namespace Elemendid
             JS_btn.Clicked += JS_btn_Clicked;
             J_btn.Clicked += J_btn_Clicked;
             PHP_btn.Clicked += PHP_btn_Clicked;
+            C_btn.Clicked += C_btn_Clicked;
+            SQL_btn.Clicked += SQL_btn_Clicked;
+        }
+
+        private async void SQL_btn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SQL());
+        }
+
+        private async void C_btn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new C());
         }
 
         private async void PHP_btn_Clicked(object sender, EventArgs e)

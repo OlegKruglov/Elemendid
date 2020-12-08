@@ -4,9 +4,13 @@
              x:Class="Elemendid.SQL">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="SQL"
-                VerticalOptions="CenterAndExpand" 
+            <Label Text="Unit Converter"
+                VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="ent" Placeholder="Miles,Pounds"></Entry>
+            <Button Text="Convert" Clicked="Button_Clicked"></Button>
+            <Label x:Name="lab"></Label>
+            <Label x:Name="lab2"></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

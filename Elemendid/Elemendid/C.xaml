@@ -4,9 +4,11 @@
              x:Class="Elemendid.C">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="C"
-                VerticalOptions="CenterAndExpand" 
+            <Label Text="Phone Dialer"
+                VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="ent" Placeholder="Please insert number"></Entry>
+            <Button x:Name="btn" Clicked="btn_Clicked" Text="Call"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
